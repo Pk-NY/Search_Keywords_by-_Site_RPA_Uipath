@@ -1,19 +1,27 @@
-### Documentation is included in the Documentation folder ###
+### [RPA 시장조사] ###
+
+3개의 포털 사이트 (구글, 다음, 네이버)에서 RPA관련 키워드(Uipath, 인공지능, Automation Anywhere, RPA, Blue Prism)를 검색하여    
+
+하루치의 뉴스제목과 뉴스URL을 수집하여 엑셀파일로 저장하는 과제
 
 
-### REFrameWork Template ###
-**Robotic Enterprise Framework**
+**[사전작업]**
 
-* Built on top of *Transactional Business Process* template
-* Uses *State Machine* layout for the phases of automation project
-* Offers high level logging, exception handling and recovery
-* Keeps external settings in *Config.xlsx* file and Orchestrator assets
-* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
-* Gets transaction data from Orchestrator queue and updates back status
-* Takes screenshots in case of system exceptions
+Input 폴더 : Master.xlsx - 검색할 키워드와 사이트가 담긴 파일, VBA 코드 파일, 엑셀템플릿
+
+Config.xlsx : input, output 폴더 경로, 결과파일 이름, 마스터파일 이름, 엑셀양식경로, VBA 코드파일
 
 
-### How It Works ###
+**[개인작업파일]**
+
+  FolderPathExits - output폴더확인과 생성
+  
+  GetMasterFiles - 마스터 파일의 유무를 체크하고 불러와서 DT , array 변수 생성
+  
+  CopyTempleteFile - 엑셀템플릿파일확인과 복사해서 결과파일로 저장
+  
+
+### [작업과정] ###
 
 1. **INITIALIZE PROCESS**
  + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
