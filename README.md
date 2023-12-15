@@ -12,7 +12,7 @@ Input 폴더 : Master.xlsx - 검색할 키워드와 사이트가 담긴 파일, 
 Config.xlsx : input, output 폴더 경로, 결과파일 이름, 마스터파일 이름, 엑셀양식경로, VBA 코드파일
 
 
-**[개인작업파일]**
+**[개인작업파일 Business 폴더]**
 
   FolderPathExits - output폴더확인과 생성
   
