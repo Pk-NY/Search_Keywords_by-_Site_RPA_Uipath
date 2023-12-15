@@ -1,0 +1,9 @@
+Sub 전체시트맞춤()
+    Dim ws As Worksheet
+    
+   
+    For Each ws In ThisWorkbook.Sheets
+       
+        ws.Columns.AutoFit
+    Next ws
+End Sub

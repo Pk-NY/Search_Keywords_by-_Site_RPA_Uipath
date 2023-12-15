@@ -1,0 +1,8 @@
+Sub 테두리적용()
+    Dim ws As Worksheet
+    
+    For Each ws In ThisWorkbook.Sheets
+       ws.Range("A:B").Borders.LineStyle = xlContinuous
+       ws.Range("A:B").Borders.Weight = xlThin
+    Next ws
+End Sub
